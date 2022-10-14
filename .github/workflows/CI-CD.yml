@@ -3,7 +3,7 @@ name: CI-CD # Github Action 페이지 좌측 리스트에 표시될 이름
 on: [push] # Push 이벤트가 발생한 경우에 실행, 응용하면 특정 브랜치나 버전 태그 생성 이벤트도 등록 가능
 
 env:
-  DOCKER_IMAGE: ghcr.io/heavyrisem/hw_oci # ghcr에 업로드될 이미지 이름, format: ghcr.io/깃허브유저이름/이미지이름
+  DOCKER_IMAGE: ghcr.io/lunaticscode/hw_oci # ghcr에 업로드될 이미지 이름, format: ghcr.io/깃허브유저이름/이미지이름
 
 jobs:
   build:
