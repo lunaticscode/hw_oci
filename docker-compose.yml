@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  hw_oci:
+    container_name: hw_oci
+    image: ghcr.io/lunaticscode/hw_oci # ghcr에 있는 프로젝트 이미지를 불러옴
+    networks:
+      - nginx
+    env_file: .env # .env 파일에 있는 환경변수들을 컨테이너 안으로 집어넣어줌
+
+networks:
+  nginx:
+    # nginx에 라우팅 되기 위해 nginx와 같은 네트워크에 연결
+    # external: true
