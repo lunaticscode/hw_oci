@@ -58,7 +58,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }} # 사용자 깃허브 아이디
-          password: ${{ secrets.GHCR_PAT }} # Settings > Secrets > Actions 의 GHCR_PAT 값을 불러옴
+          password: ${{ secrets.GHCR_PW }} # Settings > Secrets > Actions 의 GHCR_PAT 값을 불러옴
 
       # Pull Image
       - name: Pull Docker Image
